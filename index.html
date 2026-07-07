@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pronab Samanta — Backend Developer</title>
+    <meta
+      name="description"
+      content="Backend Developer building reliable systems with PHP, CodeIgniter, MySQL and JavaScript."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.min.css" />
+  </head>
+
+  <body>
+    <!-- ===== Custom cursor-glow / noise layer (pure CSS, decorative) ===== -->
+    <div class="grid-glow" aria-hidden="true"></div>
+    <div id="cf-loader">
+      <div class="cf-loader-logo"><em>Loading Portfolio...</em></div>
+      <div class="cf-loader-ring"></div>
+      <div class="cf-loader-bar">
+        <div class="cf-loader-bar-fill"></div>
+      </div>
+    </div>
+    <!-- ===== Header ===== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>Pronab<span class="logo-bracket"
+            >/&gt;</span
+          >
+        </a>
+
+        <nav class="nav-desktop" aria-label="Primary">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#journey" class="nav-link">Journey</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#journal" class="nav-link">Journal</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a
+          href="assets/resume/Pronab_Samanta_CV.pdf"
+          target="_blank"
+          class="btn btn-primary btn-sm nav-cta"
+          download
+          >Resume</a
+        >
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#principles" class="nav-link">Principles</a>
+        <a href="#journal" class="nav-link">Journal</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== Hero ===== -->
+      <section class="hero" id="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow mono">// whoami</p>
+            <h1 class="hero-name">Pronab Samanta</h1>
+            <p class="hero-role">Backend Developer</p>
+            <p class="hero-desc">
+              Building reliable backend systems using PHP, CodeIgniter, MySQL,
+              and JavaScript.
+            </p>
+            <p class="hero-desc hero-desc-secondary">
+              I enjoy modernizing legacy applications, simplifying business
+              workflows, and writing clean, maintainable code that solves
+              real-world problems.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a
+                href="assets/resume/Pronab_Samanta_CV.pdf"
+                target="_blank"
+                class="btn btn-ghost"
+                download
+                >Download Resume</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-terminal" aria-hidden="true">
+            <div class="terminal-window">
+              <div class="terminal-bar">
+                <span class="dot dot-red"></span
+                ><span class="dot dot-yellow"></span
+                ><span class="dot dot-green"></span>
+                <span class="terminal-title mono">pronab@rtns: ~</span>
+              </div>
+              <div class="terminal-body mono">
+                <p><span class="prompt">$</span> whoami</p>
+                <p class="terminal-out">backend_developer</p>
+                <p><span class="prompt">$</span> stack --list</p>
+                <p class="terminal-out">
+                  [ PHP, CodeIgniter4, MySQL, JavaScript ]
+                </p>
+                <p><span class="prompt">$</span> status</p>
+                <p class="terminal-out terminal-accent">
+                  migrating legacy → modern, one module at a time.
+                </p>
+                <p>
+                  <span class="prompt">$</span>
+                  <span class="cursor-blink">&nbsp;</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== About ===== -->
+      <section class="section" id="about">
+        <div class="container">
+          <p class="eyebrow mono">// about</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <p class="about-lead">
+              I am a Backend Developer with professional experience building and
+              modernizing enterprise web applications using PHP, CodeIgniter 4,
+              MySQL, and JavaScript.
+            </p>
+            <div class="about-body">
+              <p>
+                I began my programming journey with web design before
+                discovering my passion for backend development. Today, I enjoy
+                solving business problems, improving legacy applications, and
+                writing clean, maintainable code.
+              </p>
+              <p>
+                I believe software should make people's work easier, and I
+                continuously learn new technologies to become a better engineer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Journey (git-log styled timeline) ===== -->
+      <section class="section section-alt" id="journey">
+        <div class="container">
+          <p class="eyebrow mono">// git log --graph --oneline</p>
+          <h2 class="section-title">My Journey</h2>
+
+          <ul class="gitlog">
+            <li class="gitlog-item">
+              <span class="gitlog-dot"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">2023</p>
+                <p class="gitlog-msg">Started learning programming</p>
+              </div>
+            </li>
+            <li class="gitlog-item">
+              <span class="gitlog-dot"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">2024</p>
+                <p class="gitlog-msg">Built personal projects</p>
+              </div>
+            </li>
+            <li class="gitlog-item">
+              <span class="gitlog-dot gitlog-dot-accent"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">Jun 2025</p>
+                <p class="gitlog-msg">Joined RT Network Solutions</p>
+              </div>
+            </li>
+            <li class="gitlog-item">
+              <span class="gitlog-dot"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">2025</p>
+                <p class="gitlog-msg">Migrated multiple CI3 projects to CI4</p>
+              </div>
+            </li>
+            <li class="gitlog-item">
+              <span class="gitlog-dot"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">2026</p>
+                <p class="gitlog-msg">Built RTNS-FM</p>
+              </div>
+            </li>
+            <li class="gitlog-item">
+              <span class="gitlog-dot gitlog-dot-accent"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">Jan 2026</p>
+                <p class="gitlog-msg">Received Best Newbie Award</p>
+              </div>
+            </li>
+            <li class="gitlog-item gitlog-item-future">
+              <span class="gitlog-dot gitlog-dot-future"></span>
+              <div class="gitlog-content">
+                <p class="gitlog-hash mono">HEAD →</p>
+                <p class="gitlog-msg">
+                  Backend Engineer, International Company
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== Experience ===== -->
+      <section class="section" id="experience">
+        <div class="container">
+          <p class="eyebrow mono">// experience</p>
+          <h2 class="section-title">Experience</h2>
+
+          <div class="card exp-card">
+            <div class="exp-head">
+              <div>
+                <h3 class="exp-role">Backend Developer</h3>
+                <p class="exp-company">RT Network Solutions</p>
+              </div>
+              <p class="exp-dates mono">Jun 2025 — Present</p>
+            </div>
+            <ul class="exp-list">
+              <li>
+                Migrated production applications from CodeIgniter 3 to
+                CodeIgniter 4.
+              </li>
+              <li>Modernized legacy custom PHP systems.</li>
+              <li>Built backend modules for enterprise software.</li>
+              <li>Developed attendance and claim management systems.</li>
+              <li>Designed business logic and authentication.</li>
+              <li>Worked closely with a senior backend developer.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ===== Featured Projects ===== -->
+      <section class="section section-alt" id="projects">
+        <div class="container">
+          <p class="eyebrow mono">// featured-projects</p>
+          <h2 class="section-title">Featured Projects</h2>
+
+          <!-- Case study: RTNS-FM -->
+          <article class="case-study card">
+            <div class="case-media">
+              <div class="mockup-browser" aria-hidden="true">
+                <div class="mockup-bar">
+                  <span class="dot dot-red"></span
+                  ><span class="dot dot-yellow"></span
+                  ><span class="dot dot-green"></span>
+                </div>
+                <div class="mockup-screen mockup-screen--fm">
+                  <img
+                    src="assets/images/rtns-fm-dashboard.png"
+                    loading="lazy"
+                    alt="RTNS-FM Admin Dashboard"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="case-content">
+              <h3 class="case-title">RTNS-FM</h3>
+              <p class="case-subtitle">
+                Attendance &amp; Claim Management System
+              </p>
+
+              <dl class="case-story">
+                <div>
+                  <dt class="mono">Problem</dt>
+                  <dd>
+                    Monthly attendance approvals required two separate sign-offs
+                    and relied on manual Excel work, making the process slow and
+                    error-prone.
+                  </dd>
+                </div>
+                <div>
+                  <dt class="mono">Solution</dt>
+                  <dd>
+                    Built an attendance and claim management platform in
+                    CodeIgniter 4 that lets Team Leads review and approve a full
+                    month of attendance in only a few clicks.
+                  </dd>
+                </div>
+                <div>
+                  <dt class="mono">Impact</dt>
+                  <dd>
+                    The workflow was adopted successfully across teams, removing
+                    manual spreadsheet work — and the project earned the Best
+                    Newbie Award in January 2026.
+                  </dd>
+                </div>
+              </dl>
+
+              <div class="case-before-after">
+                <div class="ba-block">
+                  <p class="ba-label mono">Before</p>
+                  <p>.Net, manual Excel approvals, two-step sign-off.</p>
+                </div>
+                <div class="ba-arrow" aria-hidden="true">→</div>
+                <div class="ba-block">
+                  <p class="ba-label mono">After</p>
+                  <p>
+                    CodeIgniter 4, one-click monthly approval, structured audit
+                    trail.
+                  </p>
+                </div>
+              </div>
+
+              <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">CodeIgniter 4</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Authentication</span>
+                <span class="tag">Authorization</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- GitHub projects grid -->
+          <div class="projects-subhead">
+            <p class="eyebrow mono">// github-projects</p>
+          </div>
+
+          <div class="grid-3">
+            <article class="card project-card">
+              <div class="mockup-thumb" aria-hidden="true">
+                <img
+                  src="assets/images/migration.png"
+                  loading="lazy"
+                  alt="CI3 to CI4 Migration"
+                  style="height: 137px; width: 275px"
+                />
+              </div>
+              <h4 class="project-title">Legacy PHP → CI4 Migrator</h4>
+              <p class="project-desc">
+                A structured approach and helper scripts used to migrate
+                CodeIgniter 3 controllers, models, and views to CodeIgniter 4
+                with minimal downtime.
+              </p>
+              <div class="tag-row tag-row-sm">
+                <span class="tag tag-sm">PHP</span>
+                <span class="tag tag-sm">CodeIgniter 3</span>
+                <span class="tag tag-sm">CodeIgniter 4</span>
+              </div>
+              <!-- <a href="#" class="card-link mono">View on GitHub →</a> -->
+            </article>
+
+            <article class="card project-card">
+              <div class="mockup-thumb" aria-hidden="true">
+                <img
+                  src="assets/images/worksphere-admin-dashboard.png"
+                  loading="lazy"
+                  alt="WorkSphere Admin Dashboard"
+                  style="height: 137px; width: 275px"
+                />
+              </div>
+              <h4 class="project-title">Employee Management System</h4>
+              <p class="project-desc">
+                A role-based employee management module with authentication,
+                leave tracking, and a clean admin dashboard.
+              </p>
+              <div class="tag-row tag-row-sm">
+                <span class="tag tag-sm">Code Igniter 4</span>
+                <span class="tag tag-sm">JavaScript</span>
+                <span class="tag tag-sm">MySQL</span>
+              </div>
+              <!-- <a href="#" class="card-link mono">View on GitHub →</a> -->
+            </article>
+
+            <article class="card project-card">
+              <div class="mockup-thumb" aria-hidden="true">
+                <img
+                  src="assets/images/commerceflow.jpg"
+                  loading="lazy"
+                  alt="CommerceFlow-Project"
+                  style="height: 137px; width: 275px"
+                />
+              </div>
+              <h4 class="project-title">Personal Project Sandbox</h4>
+              <p class="project-desc">
+                A collection of smaller experiments built to learn REST APIs,
+                database optimization, and clean architecture patterns.
+              </p>
+              <div class="tag-row tag-row-sm">
+                <span class="tag tag-sm">REST API</span>
+                <span class="tag tag-sm">Design Patterns</span>
+              </div>
+              <!-- <a href="#" class="card-link mono">View on GitHub →</a> -->
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Technical Skills ===== -->
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="eyebrow mono">// technical-skills</p>
+          <h2 class="section-title">Technical Skills</h2>
+
+          <div class="skills-grid">
+            <div class="skill-group">
+              <p class="skill-group-label mono">Languages</p>
+              <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label mono">Backend &amp; Frameworks</p>
+              <div class="tag-row">
+                <span class="tag">CodeIgniter 4</span>
+                <span class="tag">MVC Architecture</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label mono">Database</p>
+              <div class="tag-row">
+                <span class="tag">MySQL</span>
+                <span class="tag">Query Optimization</span>
+                <span class="tag">Schema Design</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label mono">Practices</p>
+              <div class="tag-row">
+                <span class="tag">Authentication &amp; Authorization</span>
+                <span class="tag">Legacy Migration</span>
+                <span class="tag">Clean Code</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <p class="skill-group-label mono">Tools</p>
+              <div class="tag-row">
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">Git</span>
+                <span class="tag">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Engineering Principles ===== -->
+      <section class="section section-alt" id="principles">
+        <div class="container">
+          <p class="eyebrow mono">// principles.config</p>
+          <h2 class="section-title">Engineering Principles</h2>
+
+          <div class="grid-principles">
+            <div class="principle-card card">
+              <p class="principle-key mono">maintainability</p>
+              <p class="principle-text">Write maintainable code.</p>
+            </div>
+            <div class="principle-card card">
+              <p class="principle-key mono">reuse</p>
+              <p class="principle-text">Reuse logic whenever possible.</p>
+            </div>
+            <div class="principle-card card">
+              <p class="principle-key mono">understanding</p>
+              <p class="principle-text">
+                Understand the problem before writing code.
+              </p>
+            </div>
+            <div class="principle-card card">
+              <p class="principle-key mono">growth</p>
+              <p class="principle-text">Never stop learning.</p>
+            </div>
+            <div class="principle-card card">
+              <p class="principle-key mono">impact</p>
+              <p class="principle-text">
+                Build software that reduces manual work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Achievements ===== -->
+      <section class="section" id="achievements">
+        <div class="container">
+          <p class="eyebrow mono">// achievements</p>
+          <h2 class="section-title">Achievements</h2>
+
+          <div class="achievement-spotlight">
+            <div class="achievement-spotlight-glow" aria-hidden="true"></div>
+
+            <div class="achievement-badge">
+              <span aria-hidden="true">🏆</span>
+            </div>
+
+            <div class="achievement-body">
+              <p class="achievement-date mono">January 2026</p>
+              <h3 class="achievement-title">Best Newbie Award</h3>
+              <p class="achievement-desc">
+                Recognized for contribution to RTNS-FM and backend development.
+              </p>
+            </div>
+
+            <a href="assets/images/best-newbie-award.jpeg" target="_blank"
+              ><div class="achievement-media">
+                <img
+                  class="achievement-image"
+                  src="assets/images/best-newbie-award.jpeg"
+                  loading="lazy"
+                  alt="Best Newbie Award 2026"
+                />
+                <span class="achievement-media-caption mono"
+                  >view certificate</span
+                >
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Currently Learning ===== -->
+      <section class="section section-alt" id="learning">
+        <div class="container">
+          <p class="eyebrow mono">// currently-learning</p>
+          <h2 class="section-title">Currently Learning</h2>
+          <p class="section-intro">
+            Instead of pretending to know everything — here's what I'm exploring
+            right now.
+          </p>
+
+          <div class="tag-row tag-row-lg">
+            <span class="tag tag-lg">REST APIs</span>
+            <span class="tag tag-lg">React JS</span>
+            <span class="tag tag-lg">Database Optimization</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Developer Journal ===== -->
+      <section class="section" id="journal">
+        <div class="container">
+          <p class="eyebrow mono">// developer-journal.log</p>
+          <h2 class="section-title">Developer Journal</h2>
+          <p class="section-intro">
+            Not a blog. Just milestones — logged as they happen.
+          </p>
+
+          <div class="journal-log">
+            <div class="journal-entry">
+              <p class="journal-date mono">02 June 2025</p>
+              <p class="journal-text">First day at RT Network Solutions.</p>
+            </div>
+            <div class="journal-entry">
+              <p class="journal-date mono">27th August 2025</p>
+              <p class="journal-text">
+                Completed first CodeIgniter 4 migration.
+              </p>
+            </div>
+            <div class="journal-entry">
+              <p class="journal-date mono">31 January 2026</p>
+              <p class="journal-text">Received Best Newbie Award.</p>
+            </div>
+            <div class="journal-entry journal-entry-active">
+              <p class="journal-date mono">Today</p>
+              <p class="journal-text">
+                Currently learning REST APIs and software architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Contact ===== -->
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <p class="eyebrow mono">// contact</p>
+          <h2 class="section-title">Let's talk</h2>
+          <p class="section-intro">
+            Open to backend engineering opportunities and interesting problems.
+          </p>
+
+          <div class="contact-grid">
+            <a
+              href="mailto:pronabsamanta49@gmail.com"
+              class="card contact-card"
+            >
+              <span class="contact-label mono">Email</span>
+              <span class="contact-value">pronabsamanta49@gmail.com</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/pronab-samanta-771054365/"
+              target="_blank"
+              rel="noopener"
+              class="card contact-card"
+            >
+              <span class="contact-label mono">LinkedIn</span>
+              <span class="contact-value">/in/pronab-samanta-771054365</span>
+            </a>
+            <a
+              href="https://github.com/pronab-dev/"
+              target="_blank"
+              rel="noopener"
+              class="card contact-card"
+            >
+              <span class="contact-label mono">GitHub</span>
+              <span class="contact-value">/pronab-dev</span>
+            </a>
+            <a
+              href="assets/resume/Pronab_Samanta_CV.pdf"
+              target="_blank"
+              class="card contact-card"
+              download
+            >
+              <span class="contact-label mono">Resume</span>
+              <span class="contact-value">Download PDF</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-quote">
+          "Every expert was once a beginner. This portfolio documents my journey
+          — where I started, what I've built, and where I'm headed next."
+        </p>
+        <p class="footer-meta mono">
+          © <span id="year"></span> Pronab Samanta — built from scratch, no
+          template.
+        </p>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+    <script src="js/script.js"></script>
+  </body>
+</html>
