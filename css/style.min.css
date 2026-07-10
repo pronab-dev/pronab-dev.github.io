@@ -167,8 +167,8 @@ img{max-width:100%;display:block}
 .achievement-date{color:var(--accent-cyan);font-size:.78rem;letter-spacing:.03em;margin-bottom:6px}
 .achievement-title{font-family:var(--font-display);font-size:1.3rem;margin-bottom:8px}
 .achievement-desc{color:var(--text-secondary);max-width:46ch}
-.achievement-media{position:relative;z-index:2;flex-shrink:0;width:140px}
-.achievement-image{width:140px;height:100px;object-fit:cover;border-radius:8px;border:1px solid var(--border);transition:transform var(--transition),border-color var(--transition)}
+.achievement-media{position:relative;z-index:2;flex-shrink:0;width:200px}
+.achievement-image{width:200px;height:100px;object-fit:cover;border-radius:8px;border:1px solid var(--border);transition:transform var(--transition),border-color var(--transition)}
 .achievement-spotlight:hover .achievement-image{transform:scale(1.04);border-color:var(--accent)}
 .achievement-media-caption{display:block;text-align:center;margin-top:8px;font-size:.7rem;color:var(--text-muted);opacity:0;transform:translateY(-4px);transition:var(--transition)}
 .achievement-spotlight:hover .achievement-media-caption{opacity:1;transform:none}
